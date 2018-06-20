@@ -70,7 +70,8 @@ section{
 
 }
 
-section h3.title{
+section h3.title,
+title__align--center{
 	color: #414a4f;
 	text-transform: capitalize; 
 	font: bold 32px 'Open Sans', sans-serif;
