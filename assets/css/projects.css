@@ -25,11 +25,6 @@
     display: table
 }
 
-.first-feature-right {
-    display: none;
-    background-color: #545454
-}
-
 @media screen and (min-width: 45em) {
     .first-feature-right {
         display: inline-block
@@ -86,7 +81,7 @@
 }
 
 .first-feature-right {
-    background-image: url("../img/coast.jpg");
+    background-image: url("../img/uslug/main.png");
     background-size: cover;
     box-shadow: inset 0 0 50px rgba(0, 0, 20, 0.1);
     background-position: center top
@@ -130,6 +125,7 @@
 }
 
 .feature-heading {
+    padding-left: 15px;
     color: #377DED;
     font-size: 2.2em;
     text-align: left;

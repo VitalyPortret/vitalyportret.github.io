@@ -8,7 +8,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/projects.css">
 </head>
@@ -19,7 +19,7 @@
 		<h2><a href="#">VitalyPortret</a></h2>
 		<nav>
 			<li><a href="#projects">Projects</a></li>
-			<li><a href="#about">About</a></li>
+            <li><a href="#about">About</a></li>
 			<li><a href="#contact">Contacts</a></li>
 		</nav>
 	</header>
@@ -27,73 +27,59 @@
 
 	<section class="hero">
 		<div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
-		<h1>Vitaly Portretov Project's</h1>
-		<h3>From Vladimir with <i class="fa fa-heart" aria-hidden="true"></i></h3>
+		<h1>Проекты Виталия Портретова</h1>
 	</section>
 
 
-    <section class="our-work">
-        <h3 class="title">About</h3>
-        <p>Здесь представлены работы, которые я разработал в периуд обучения в университете.</p>
+    <section class="features">
+        <h3 class="title">Навыки</h3>
+        <p>Программирование - это мое главное хобби и работа одновременно.</p>
         <hr>
 
         <ul class="grid">
-            <li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
-            <li class="large" style="background-image: url(assets/img/island.jpg);"></li>
-            <li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
-            <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+            <li>
+                <h4>Разработка</h4>
+                <p>Для Backend разработки Java 8, c использованием Spring Framework. Для Frontend разработки JavaScript с использованием React.</p>
+            </li>
+            <li>
+                <h4>Тестирование</h4>
+                <p>Тестирую написаный код на Java с использованием Spock Framework. Для тестирования JavaScript использую Jest.</p>
+            </li>
+            <li>
+                <h4>Проектирование</h4>
+                <p>Хорошее проектирование позволяет сделать проект гибким и масштабируемым. Свои проекты я проектировал без чьей-либо помощи.</p>
+            </li>
         </ul>
     </section>
 
 
-	<section class="features">
-		<h3 class="title">Features and services</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-		<hr>
-
-		<ul class="grid">
-			<li>
-				<i class="fa fa-camera-retro"></i>
-				<h4>Photography</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-			<li>
-				<i class="fa fa-cubes"></i>
-				<h4>Web Development</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-			<li>
-				<i class="fa fa-newspaper-o"></i>
-				<h4>Content Editing</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-			</li>
-		</ul>
-	</section>
-
-
     <section class="reviews" id="projects">
-        <h3 class="title">Projects</h3>
+        <h3 class="title">Проекты</h3>
         <div class="features-container" id="features">
             <div class="top-row">
                 <div class="first-feature-left">
                     <div class="feature-wrapper">
-                        <h3 class="feature-heading">Share Tasks</h3>
-                        <p class="feature-copy">Keep one another on track with a simple shared task&nbsp;list</p>
-                        <p class="feature-copy">Create tasks for you or your partner, and add due dates to help keep things on&nbsp;schedule</p>
+                        <h3 class="feature-heading">USLUG</h3>
+                        <p class="feature-copy">Сервис, для заказа услуг, выполнения услуг другими пользователями, модерацией и реализацией отчетов о выполнении услуг.</p>
+                        <p class="feature-copy">Backend: Java 8, Spring Framework 5, Apache Kafka, Vert.x, Spring Boot 2, Spring Data, Spring Security, Hibernate, ModelMapper, p6spy, Lombok, Thumbnailator. Реализация REST API.</p>
+                        <p class="feature-copy">Frontend: JavaScript, React 16, Redux, ReactRouter 4, Bootstrap 4, AntDesign 3.5, Lodash, moment и т.д.</p>
                     </div>
                 </div>
                 <div class="first-feature-right"></div>
             </div>
+
             <div class="bottom-row">
                 <div class="second-feature-left"></div>
                 <div class="second-feature-right">
                     <div class="feature-wrapper">
-                        <h3 class="feature-heading">Chat Live</h3>
-                        <p class="feature-copy">Tap on one another’s avatars to chat it up and see everything you’ve completed so&nbsp;far</p>
-                        <p class="feature-copy">Toss in a picture, too, if you don’t have time to type 1,000 extra&nbsp;words</p>
+                        <h3 class="feature-heading">USLUG-андроид клиент</h3>
+                        <p class="feature-copy">Сервис для заказа услуг, поиска, и выбора. Андроид клиент, имеющий ограниченый функционал.</p>
+                        <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Spring Security, Hibernate, Dozer, p6spy, Lombok, Thumbnailator. Реализация REST API.</p>
+                        <p class="feature-copy">Android: Java, Android SDK, Fastjson.</p>
                     </div>
                 </div>
             </div>
+
             <div class="top-row">
                 <div class="first-feature-left">
                     <div class="feature-wrapper">
@@ -104,6 +90,7 @@
                 </div>
                 <div class="first-feature-right"></div>
             </div>
+
             <div class="bottom-row">
                 <div class="second-feature-left"></div>
                 <div class="second-feature-right">
@@ -114,6 +101,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="top-row">
                 <div class="first-feature-left">
                     <div class="feature-wrapper">
@@ -125,6 +113,23 @@
                 <div class="first-feature-right"></div>
             </div>
         </div>
+    </section>
+
+
+    <section id="about" class="our-work">
+        <h3 class="title">About</h3>
+        <p>
+            Занимаюсь програмированием более 5 лет. Первым языком был PHP, использовался для построения простельких сайтов, а также для ознакомления с HTML и CSS.
+            Далее программировал на C# около трех лет, начинал с Windows Form, закончил изучением ASP.NET.
+        </p>
+        <hr>
+
+        <ul class="grid">
+            <li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
+            <li class="large" style="background-image: url(assets/img/island.jpg);"></li>
+            <li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
+            <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+        </ul>
     </section>
 
 
@@ -147,6 +152,7 @@
 			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
 			<li><a href="#"><i class="fa fa-github-square"></i></a></li>
 		</ul>
+        <p>From Vladimir with <i class="fa fa-heart"></i></p>
 		<p>images courtesy to <a href="https://unsplash.com/" target="_blank">unsplash</a>.</p>
 		<p>No attribution required. you can remove this footer.</p>
 	</footer>
