@@ -81,7 +81,6 @@
 }
 
 .first-feature-right {
-    background-image: url("../img/uslug/main.png");
     background-size: cover;
     box-shadow: inset 0 0 50px rgba(0, 0, 20, 0.1);
     background-position: center top
@@ -153,7 +152,7 @@
 }
 
 .second-feature-right {
-    background-color: #efee5c;
+    background-color: #c8c8c8;
     float: right;
     padding: 15px
 }
