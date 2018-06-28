@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/tabs.css">
 </head>
 
 <body>
@@ -18,9 +19,10 @@
 	<header>
 		<h2><a href="#">VitalyPortret</a></h2>
 		<nav>
-			<li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-			<li><a href="#contact">Contacts</a></li>
+			<li><a href="#skills">Навыки</a></li>
+			<li><a href="#projects">Проекты</a></li>
+            <li><a href="#about">О себе</a></li>
+			<li><a href="#contact">Контакты</a></li>
 		</nav>
 	</header>
 
@@ -31,7 +33,7 @@
 	</section>
 
 
-    <section class="features">
+    <section class="features" id="skills">
         <h3 class="title">Навыки</h3>
         <p>Программирование - это мое главное хобби и работа одновременно.</p>
         <hr>
@@ -43,7 +45,7 @@
             </li>
             <li>
                 <h4>Тестирование</h4>
-                <p>Тестирую написаный код на Java с использованием Spock Framework. Для тестирования JavaScript использую Jest.</p>
+                <p>Есть небольшой опыт в тестировании. Тестирую написаный код на Java с использованием Spock Framework. Для тестирования JavaScript использую Jest.</p>
             </li>
             <li>
                 <h4>Проектирование</h4>
@@ -56,85 +58,118 @@
     <section class="reviews" id="projects">
         <h3 class="title">Проекты</h3>
         <div class="features-container" id="features">
-            <div class="top-row">
-                <div class="first-feature-left">
-                    <div class="feature-wrapper">
-                        <h3 class="feature-heading">USLUG</h3>
-                        <p class="feature-copy">Сервис, для заказа услуг, выполнения услуг другими пользователями, модерацией и реализацией отчетов о выполнении услуг.</p>
-                        <p class="feature-copy">Backend: Java 8, Spring Framework 5, Apache Kafka, Vert.x, Spring Boot 2, Spring Data, Spring Security, Hibernate, ModelMapper, p6spy, Lombok, Thumbnailator. Реализация REST API.</p>
-                        <p class="feature-copy">Frontend: JavaScript, React 16, Redux, ReactRouter 4, Bootstrap 4, AntDesign 3.5, Lodash, moment и т.д.</p>
+
+            <div class="tab-wrap">
+                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                <label for="tab1">Short</label>
+
+                <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                <label for="tab2">Medium</label>
+
+                <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                <label for="tab3">Long</label>
+
+                <input type="radio" id="tab4" name="tabGroup1" class="tab">
+                <label for="tab4">Long</label>
+
+                <input type="radio" id="tab5" name="tabGroup1" class="tab">
+                <label for="tab5">Long</label>
+
+                <input type="radio" id="tab6" name="tabGroup1" class="tab">
+                <label for="tab6">Long</label>
+
+                <div class="tab__content">
+                    <div class="top-row">
+                        <div class="first-feature-left">
+                            <div class="feature-wrapper">
+                                <h3 class="feature-heading">USLUG</h3>
+                                <p class="feature-copy">Сервис, для заказа услуг, выполнения услуг другими пользователями, модерацией и реализацией отчетов о выполнении услуг.</p>
+                                <p class="feature-copy">Backend: Java 8, Spring Framework 5, Apache Kafka, Vert.x, Spring Boot 2, Spring Data, Spring Security, Hibernate, ModelMapper, p6spy, Lombok, Thumbnailator. Реализация REST API.</p>
+                                <p class="feature-copy">Frontend: JavaScript, React 16, Redux, ReactRouter 4, Bootstrap 4, AntDesign 3.5, Lodash, moment и т.д.</p>
+                            </div>
+                        </div>
+                        <div class="first-feature-right" style="background-image: url(assets/img/uslug/main.png)"></div>
                     </div>
                 </div>
-                <div class="first-feature-right" style="background-image: url(assets/img/uslug/main.png)"></div>
-            </div>
 
-            <div class="bottom-row">
-                <div class="second-feature-left" style="background-image: url(assets/img/uslug/android/main.png);"></div>
-                <div class="second-feature-right">
-                    <div class="feature-wrapper">
-                        <h3 class="feature-heading">USLUG (Android клиент)</h3>
-                        <p class="feature-copy">Андроид клиент, имеет ограниченый функционал по сравнению с веб-приложением.</p>
-                        <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Hibernate, Dozer, Lombok, Thumbnailator. Реализация REST API.</p>
-                        <p class="feature-copy">Android: Java, Android SDK, Fastjson.</p>
+                <div class="tab__content">
+                    <div class="bottom-row">
+                        <div class="second-feature-left" style="background-image: url(assets/img/uslug/android/main.png);"></div>
+                        <div class="second-feature-right">
+                            <div class="feature-wrapper">
+                                <h3 class="feature-heading">USLUG (Android клиент)</h3>
+                                <p class="feature-copy">Андроид клиент, имеет ограниченый функционал по сравнению с веб-приложением.</p>
+                                <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Hibernate, Dozer, Lombok, Thumbnailator. Реализация REST API.</p>
+                                <p class="feature-copy">Android: Java, Android SDK, Fastjson.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="top-row">
-                <div class="first-feature-left">
-                    <div class="feature-wrapper">
-                        <h3 class="feature-heading">Android-приложение для поиска подарков</h3>
-                        <p class="feature-copy">Android-приложение для поиска подарков.</p>
-                        <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Hibernate, Lombok. Реализация REST API.</p>
-                        <p class="feature-copy">Android: Java, Android SDK, Fastjson, Яндекс.Карты для Android.</p>
+                <div class="tab__content">
+                    <div class="top-row">
+                        <div class="first-feature-left">
+                            <div class="feature-wrapper">
+                                <h3 class="feature-heading">Android-приложение для поиска подарков</h3>
+                                <p class="feature-copy">Android-приложение для поиска подарков.</p>
+                                <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Hibernate, Lombok. Реализация REST API.</p>
+                                <p class="feature-copy">Android: Java, Android SDK, Fastjson, Яндекс.Карты для Android.</p>
+                            </div>
+                        </div>
+                        <div class="first-feature-right"></div>
                     </div>
                 </div>
-                <div class="first-feature-right"></div>
-            </div>
 
-            <div class="bottom-row">
-                <div class="second-feature-left"></div>
-                <div class="second-feature-right">
-                    <div class="feature-wrapper">
-                        <h3 class="feature-heading">Chat Live</h3>
-                        <p class="feature-copy">Tap on one another’s avatars to chat it up and see everything you’ve completed so&nbsp;far</p>
-                        <p class="feature-copy">Toss in a picture, too, if you don’t have time to type 1,000 extra&nbsp;words</p>
+                <div class="tab__content">
+                    <div class="bottom-row">
+                        <div class="second-feature-left"></div>
+                        <div class="second-feature-right">
+                            <div class="feature-wrapper">
+                                <h3 class="feature-heading">Chat Live</h3>
+                                <p class="feature-copy">Tap on one another’s avatars to chat it up and see everything you’ve completed so&nbsp;far</p>
+                                <p class="feature-copy">Toss in a picture, too, if you don’t have time to type 1,000 extra&nbsp;words</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab__content">
+                    <div class="top-row">
+                        <div class="first-feature-left">
+                            <div class="feature-wrapper">
+                                <h3 class="feature-heading">USLUG (Android клиент)</h3>
+                                <p class="feature-copy">Андроид клиент, имеет ограниченый функционал по сравнению с веб-приложением.</p>
+                                <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Hibernate, Dozer, Lombok, Thumbnailator. Реализация REST API.</p>
+                                <p class="feature-copy">Android: Java, Android SDK, Fastjson.</p>
+                            </div>
+                        </div>
+                        <div class="first-feature-right" style="background-image: url(assets/img/uslug/android/main.png);"></div>
+                    </div>
+                </div>
+
+                <div class="tab__content">
+                    <div class="bottom-row">
+                        <div class="second-feature-left" style="background-image: url(assets/img/goTogether/main.jpg)"></div>
+                        <div class="second-feature-right">
+                            <div class="feature-wrapper">
+                                <h3 class="feature-heading">Chat Live</h3>
+                                <p class="feature-copy">Tap on one another’s avatars to chat it up and see everything you’ve completed so&nbsp;far</p>
+                                <p class="feature-copy">Toss in a picture, too, if you don’t have time to type 1,000 extra&nbsp;words</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="top-row">
-            <div class="first-feature-left">
-                <div class="feature-wrapper">
-                    <h3 class="feature-heading">USLUG (Android клиент)</h3>
-                    <p class="feature-copy">Андроид клиент, имеет ограниченый функционал по сравнению с веб-приложением.</p>
-                    <p class="feature-copy">Backend: Java 8, Spring Framework 5, Spring Boot 2, Spring Data, Hibernate, Dozer, Lombok, Thumbnailator. Реализация REST API.</p>
-                    <p class="feature-copy">Android: Java, Android SDK, Fastjson.</p>
-                </div>
-            </div>
-            <div class="first-feature-right" style="background-image: url(assets/img/uslug/android/main.png);"></div>
-        </div>
-
-        <div class="bottom-row">
-            <div class="second-feature-left" style="background-image: url(assets/img/goTogether/main.jpg)"></div>
-            <div class="second-feature-right">
-                <div class="feature-wrapper">
-                    <h3 class="feature-heading">Chat Live</h3>
-                    <p class="feature-copy">Tap on one another’s avatars to chat it up and see everything you’ve completed so&nbsp;far</p>
-                    <p class="feature-copy">Toss in a picture, too, if you don’t have time to type 1,000 extra&nbsp;words</p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
 
     <section id="about" class="our-work">
-        <h3 class="title">About</h3>
+        <h3 class="title">О себе</h3>
         <p>
-            Занимаюсь програмированием более 5 лет. Первым языком был PHP, использовался для построения простельких сайтов, а также для ознакомления с HTML и CSS.
-            Далее программировал на C# около трех лет, начинал с Windows Form, закончил изучением ASP.NET.
+            Окончил ВлГУ по специальности Информационные системы и технологии.
+            Программирую более 5 лет, сначала полгода на PHP(HTML + CSS), создавал простенькие сайты, далее 3 года на C#(WebForms и ASP.NET).
+            После чего перешел на Java, опыт около 2х лет, из которых более 1,5 года JavaEE и Spring, и одновременно около года программирую на JS ES7 + ReactJs.
         </p>
         <hr>
 
@@ -147,15 +182,10 @@
     </section>
 
 
-	<section class="contact">
-		<h3 class="title">Join our newsletter</h3>
+	<section class="contact" id="contact">
+		<h3 class="title">Контакты</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
 		<hr>
-
-		<form>
-			<input type="email" placeholder="Email">
-			<a href="#" class="btn">Subscribe now</a>
-		</form>
 	</section>
 
 
